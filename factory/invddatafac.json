@@ -1,0 +1,9 @@
+{
+	"name": "invddatafac",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bcfb76fc-3f5b-4ee3-942e-3c79beb3025d",
+		"tenantId": "3a15904d-3fd9-4256-a753-beb05cdf0c6d"
+	}
+}
