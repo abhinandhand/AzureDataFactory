@@ -1,0 +1,46 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "meetingdata.json",
+				"container": "invd"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"skillCode": {
+					"type": "string"
+				},
+				"npaAccount": {
+					"type": "string"
+				},
+				"meetingId": {
+					"type": "string"
+				},
+				"meetingUrl": {
+					"type": "string"
+				},
+				"meetingActive": {
+					"type": "boolean"
+				},
+				"lastUpdated": {
+					"type": "object",
+					"properties": {
+						"$date": {
+							"type": "integer"
+						}
+					}
+				}
+			}
+		}
+	}
+}
